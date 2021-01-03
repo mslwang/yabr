@@ -40,7 +40,8 @@
   margin-right: 8px;
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   border: 2px solid rgba(112, 76, 182, 0.4);
 }
 
