@@ -36,7 +36,23 @@ dependencies:
   - xz=5.2.5=h7b6447c_0
   - zlib=1.2.11=h7b6447c_3
   - pip:
+    - appdirs==1.4.4
     - asgiref==3.3.1
+    - astroid==2.4.2
+    - cfgv==3.2.0
+    - distlib==0.3.1
     - django==3.1.4
+    - filelock==3.0.12
+    - identify==1.5.11
+    - isort==5.7.0
+    - lazy-object-proxy==1.4.3
+    - mccabe==0.6.1
+    - nodeenv==1.5.0
+    - pre-commit==2.9.3
+    - pylint==2.6.0
+    - pyyaml==5.3.1
     - sqlparse==0.4.1
+    - toml==0.10.2
+    - virtualenv==20.2.2
+    - wrapt==1.12.1
 prefix: /home/mattheww/anaconda3/envs/yabr
