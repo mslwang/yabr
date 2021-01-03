@@ -9,5 +9,4 @@ dependencies:
   - pip:
       - django==3.1.4
       - pre-commit
-      - pylint
       - yapf
