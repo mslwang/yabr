@@ -1,58 +1,13 @@
 name: yabr
 channels:
-  - conda-forge
   - defaults
+  - conda-forge
 dependencies:
-  - _libgcc_mutex=0.1=main
-  - blas=1.0=openblas
-  - ca-certificates=2020.12.5=ha878542_0
-  - certifi=2020.12.5=py39hf3d152e_0
-  - joblib=1.0.0=pyhd8ed1ab_0
-  - ld_impl_linux-64=2.33.1=h53a641e_7
-  - libedit=3.1.20191231=h14c3975_1
-  - libffi=3.3=he6710b0_2
-  - libgcc-ng=9.1.0=hdf63c60_0
-  - libgfortran-ng=7.3.0=hdf63c60_0
-  - libopenblas=0.3.10=h5a2b251_0
-  - libstdcxx-ng=9.1.0=hdf63c60_0
-  - ncurses=6.2=he6710b0_1
-  - numpy=1.19.2=py39h87658db_0
-  - numpy-base=1.19.2=py39h0f7b65f_0
-  - openssl=1.1.1i=h27cfd23_0
-  - pandas=1.1.5=py39ha9443f7_0
-  - pip=20.3.3=py39h06a4308_0
-  - python=3.9.1=hdb3f193_2
-  - python-dateutil=2.8.1=py_0
-  - python_abi=3.9=1_cp39
-  - pytz=2020.5=pyhd3eb1b0_0
-  - readline=8.0=h7b6447c_0
-  - scikit-surprise=1.1.1=py39h1dff97c_1
-  - setuptools=51.0.0=py39h06a4308_2
-  - six=1.15.0=py39h06a4308_0
-  - sqlite=3.33.0=h62c20be_0
-  - tk=8.6.10=hbc83047_0
-  - tzdata=2020d=h14c3975_0
-  - wheel=0.36.2=pyhd3eb1b0_0
-  - xz=5.2.5=h7b6447c_0
-  - zlib=1.2.11=h7b6447c_3
+  - python=3.9
+  - pandas
+  - scikit-surprise
   - pip:
-    - appdirs==1.4.4
-    - asgiref==3.3.1
-    - astroid==2.4.2
-    - cfgv==3.2.0
-    - distlib==0.3.1
-    - django==3.1.4
-    - filelock==3.0.12
-    - identify==1.5.11
-    - isort==5.7.0
-    - lazy-object-proxy==1.4.3
-    - mccabe==0.6.1
-    - nodeenv==1.5.0
-    - pre-commit==2.9.3
-    - pylint==2.6.0
-    - pyyaml==5.3.1
-    - sqlparse==0.4.1
-    - toml==0.10.2
-    - virtualenv==20.2.2
-    - wrapt==1.12.1
-prefix: /home/mattheww/anaconda3/envs/yabr
+      - django==3.1.4
+      - pre-commit
+      - pylint
+      - yapf
