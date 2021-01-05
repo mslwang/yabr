@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import { Counter } from "./components/counter/Counter";
+import YabrApp from "./components/YabrApp/YabrApp";
 import "./App.css";
 
 function App() {
