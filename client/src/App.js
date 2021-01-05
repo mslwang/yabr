@@ -10,6 +10,7 @@ function App() {
         <Counter />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+          whats up
         </p>
       </header>
     </div>
