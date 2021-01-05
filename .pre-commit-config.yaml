@@ -2,3 +2,7 @@
     rev: v0.30.0
     hooks:
     -   id: yapf
+-   repo: https://github.com/PyCQA/isort
+    rev: 5.7.0
+    hooks:
+    -   id: isort
