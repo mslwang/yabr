@@ -9,6 +9,7 @@ const YabrApp = () => {
     return (
         <div>
             <NavBar />
+            <Footer />
         </div>
     );
 };

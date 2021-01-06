@@ -1,0 +1,9 @@
+.footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #E2E5E6;
+}
