@@ -1,4 +1,3 @@
-from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 
 
@@ -7,15 +6,14 @@ class Author(models.Model):
     name = models.CharField(max_length=255)
 
 
-class AuthorToBooks(models.Model):
-    author_id = models.ForeignKey()
-    book_id = models.ForeignKey()
-
-
 class Book(models.Model):
-    isbn = models.IntegerField(unique=True)
-    isbn13 = models.IntegerField(unique=True)
-    original_publication_year = models.IntegerField()
-    title = models.CharField()
-    description = models.CharField()
-    image_url = models.CharField()
+    isbn = models.CharField(max_length=10)
+    original_publication_year = models.FloatField()
+    title = models.CharField(max_length=60)
+    description = models.TextField()
+    image_url = models.CharField(max_length=255)
+
+
+class AuthorToBook(models.Model):
+    author_id = models.ForeignKey(Author, on_delete=models.CASCADE)
+    book_id = models.ForeignKey(Book, on_delete=models.CASCADE)

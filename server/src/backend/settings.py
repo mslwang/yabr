@@ -41,6 +41,8 @@ INSTALLED_APPS = [
 
     # personal apps
     'apps.ratings',
+    'apps.users',
+    'apps.books',
 ]
 
 MIDDLEWARE = [

@@ -1,4 +1,5 @@
 from django.urls import path
+from rest_framework.urlpatterns import format_suffix_patterns
 
 from .views import RatingViewSet
 
@@ -11,7 +12,7 @@ rating_detail = RatingViewSet.as_view({
 })
 
 app_name = 'rating'
-urlpatterns = [
-    path('rating/', rating_list, name='rating-list'),
-    path('rating/<int:pk>/', rating_detail, name='rating-detail'),
-]
+urlpatterns = format_suffix_patterns([
+    path('', rating_list, name='rating-list'),
+    path('<int:pk>/', rating_detail, name='rating-detail'),
+])
