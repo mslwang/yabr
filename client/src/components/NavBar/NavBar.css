@@ -19,7 +19,6 @@ body {
     display: none;
 }
 
-.nav-links,
 .logo {
     text-decoration: none;
     color: #232C4E;
@@ -72,15 +71,7 @@ body {
         margin-left: 25px;
     }
 
-    .nav-links {
-        margin-left: 40px;
-    }
-
     .logo {
         margin-top: 0;
-    }
-
-    .navbar-toggle {
-        display: none;
     }
 }
