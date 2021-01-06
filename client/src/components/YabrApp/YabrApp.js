@@ -7,7 +7,9 @@ import "./YabrApp.css";
 
 const YabrApp = () => {
     return (
-        <div></div>
+        <div>
+            <NavBar />
+        </div>
     );
 };
 
