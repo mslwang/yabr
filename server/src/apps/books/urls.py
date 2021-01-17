@@ -4,17 +4,17 @@ from .views import AuthorToBookViewSet, AuthorViewSet, BookViewSet
 
 # How would I do this more efficiently?
 
-author_list_all = AuthorViewSet.as_view({'get': 'list'})
+authors_list_all = AuthorViewSet.as_view({'get': 'list'})
 
-author_list_book = AuthorToBookViewSet.as_view({'get': 'retrieve'})
+authors_list_book = AuthorToBookViewSet.as_view({'get': 'retrieve'})
 
-book_list_all = BookViewSet.as_view({'get': 'list'})
+books_list_all = BookViewSet.as_view({'get': 'list'})
 
-book_list_specific = BookViewSet.as_view({'get': 'retrieve'})
+books_list_specific = BookViewSet.as_view({'get': 'retrieve'})
 
 urlpatterns = [
-    path('author/', author_list_all, name='author-list'),
-    path('author/<int:pk>/', author_list_book, name='author-detail'),
-    path('book/', book_list_all, name='book-list'),
-    path('book/<int:pk>/', book_list_specific, name='book-detail')
+    path('authors/', authors_list_all, name='authors-list'),
+    path('authors/<int:pk>/', authors_list_book, name='authors-detail'),
+    path('books/', books_list_all, name='books-list'),
+    path('books/<int:pk>/', books_list_specific, name='books-detail')
 ]

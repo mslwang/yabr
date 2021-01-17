@@ -12,3 +12,5 @@ dependencies:
       - yapf
       - isort
       - djangorestframework
+      - python-dotenv
+      - psycopg2

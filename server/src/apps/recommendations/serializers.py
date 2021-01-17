@@ -9,3 +9,10 @@ class RecommendationSerializer(serializers.ModelSerializer):
         model = Recommendation
         fields = '__all__'
         depth = 1
+
+
+class BatchSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Batch
+        fields = '__all__'

@@ -11,7 +11,7 @@ rating_detail = RatingViewSet.as_view({
     'delete': 'destroy'
 })
 
-app_name = 'rating'
+app_name = 'recommendation'
 urlpatterns = format_suffix_patterns([
     path('', rating_list, name='rating-list'),
     path('<int:pk>/', rating_detail, name='rating-detail'),
